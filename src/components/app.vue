@@ -2,16 +2,19 @@
     <div>
         <div id="exchanges">
             <Bitcointrade />
+            <Mercadobitcoin />
         </div>
     </div>
 </template>
 <script>
 
 import Bitcointrade from './bitcointrade/index.vue'
+import Mercadobitcoin from './mercadobitcoin/index.vue'
 
 export default { 
     components: {
         Bitcointrade,
+        Mercadobitcoin, 
     }
 }
 </script>
