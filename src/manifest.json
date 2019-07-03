@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "CryptoBRLExchanges",
+    "description": "Prices from Brazilian Crypto Exchanges",
+    "version": "1",
+    "author": "helton hayashi",
+    "permissions": [
+       "https://cdn.jsdelivr.net/npm/vue/dist/vue.js" 
+    ], 
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides" : {
+    },
+    "js" : ["app.js"]
+}

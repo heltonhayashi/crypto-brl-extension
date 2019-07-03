@@ -1,0 +1,32 @@
+{
+  "name": "cryptor",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:heltonhayashi/crypto-br-extension.git",
+  "author": "Helton Hayashi <heltonhayashi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "laravel-mix": "^4.0.15",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.20.1",
+    "sass-loader": "7.*",
+    "vue-cryptocurrency-icons": "^0.2.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
