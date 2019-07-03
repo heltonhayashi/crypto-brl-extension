@@ -1,8 +1,8 @@
 {
-  "name": "cryptor",
+  "name": "Crypto BRL Extension",
   "version": "1.0.0",
   "main": "app.js",
-  "repository": "git@github.com:heltonhayashi/crypto-br-extension.git",
+  "repository": "git@github.com:heltonhayashi/crypto-brl-extension.git",
   "author": "Helton Hayashi <heltonhayashi@gmail.com>",
   "license": "MIT",
   "scripts": {
