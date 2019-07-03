@@ -3,6 +3,7 @@
         <div id="exchanges">
             <Bitcointrade />
             <Mercadobitcoin />
+            <Foxbit />
         </div>
     </div>
 </template>
@@ -10,11 +11,13 @@
 
 import Bitcointrade from './bitcointrade/index.vue'
 import Mercadobitcoin from './mercadobitcoin/index.vue'
+import Foxbit from './foxbit/index.vue'
 
 export default { 
     components: {
         Bitcointrade,
         Mercadobitcoin, 
+        Foxbit, 
     }
 }
 </script>
