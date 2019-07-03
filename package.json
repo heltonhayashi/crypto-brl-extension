@@ -1,5 +1,5 @@
 {
-  "name": "Crypto BRL Extension",
+  "name": "CryptoBRLExtension",
   "version": "1.0.0",
   "main": "app.js",
   "repository": "git@github.com:heltonhayashi/crypto-brl-extension.git",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0"
   },
