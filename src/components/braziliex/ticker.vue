@@ -1,6 +1,6 @@
 <template>
     <tr>
-        <td class="crypto-name">{{ this.coin.toUpper() }}</td>
+        <td class="crypto-name">{{ this.coin.toUpperCase() }}</td>
         <td class="lastprice">
             {{ data.info.last ? formatPrice(data.info.last) : 0 }}
         </td>
@@ -42,7 +42,7 @@ export default {
       const self = this;
       const result = axios.get('https://braziliex.com/api/v1/public/ticker/'+ this.coin+'_brl')
         .then(function(response) {
-          self.data.info = response.data.data;
+          self.data.info = response.data;
         })
         .catch(function(error) {
           console.log(error)

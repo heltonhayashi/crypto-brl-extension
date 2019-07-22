@@ -40,7 +40,7 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('https://api.bitcointrade.com.br/v2/public/BRL'+ this.coin+'/ticker')
+      const result = axios.get('https://cors-anywhere.herokuapp.com/https://api.bitcointrade.com.br/v2/public/BRL'+ this.coin+'/ticker')
         .then(function(response) {
           self.data.info = response.data.data;
         })
