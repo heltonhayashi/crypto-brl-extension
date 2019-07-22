@@ -4,6 +4,7 @@
             <Bitcointrade />
             <Mercadobitcoin />
             <Foxbit />
+			<Braziliex />
         </div>
     </div>
 </template>
@@ -12,12 +13,14 @@
 import Bitcointrade from './bitcointrade/index.vue'
 import Mercadobitcoin from './mercadobitcoin/index.vue'
 import Foxbit from './foxbit/index.vue'
+import Braziliex from './braziliex/index.vue'
 
 export default { 
     components: {
         Bitcointrade,
         Mercadobitcoin, 
         Foxbit, 
+		Braziliex,
     }
 }
 </script>
