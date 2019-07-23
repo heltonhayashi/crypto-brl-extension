@@ -14,5 +14,6 @@ Cryptocurrency prices from Brazilian exchanges
 - [MercadoBitcoin](https://www.mercadobitcoin.com.br/)
 - [FoxBit](https://foxbit.com.br/)
 - [Braziliex](https://braziliex.com/)
+- [PitaiaTrade](https://pitaiatrade.com/)
 
 ![print](print.png)
