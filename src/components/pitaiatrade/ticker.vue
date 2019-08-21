@@ -1,14 +1,14 @@
 <template>
     <tr>
-        <td class="crypto-name">{{ this.coin }}</td>
+        <td class="crypto-name">BTC</td>
         <td class="lastprice">
-            {{ data.info.last ? formatPrice(data.info.last) : 0 }}
+            {{ data.info.buy ? formatPrice(data.info.buy) : 0 }}
         </td>
         <td>
             {{ data.info.high ? formatPrice(data.info.high) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.low) : 0 }}
+            {{ data.info.low ? formatPrice(data.info.low) : 0 }}
         </td>
     </tr>
 </template>
@@ -17,12 +17,9 @@
 import axios from 'axios'
 
 export default {
-  props: ['coin'], 
-
   data: function () {
     return { 
         data: {
-          coin: '', 
           fall: false, 
           info: {},
         } 
@@ -40,9 +37,9 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('https://cors-anywhere.herokuapp.com/https://api.bitcointrade.com.br/v2/public/BRL'+ this.coin+'/ticker')
+      const result = axios.get('https://cors-anywhere.herokuapp.com/https://api.pitaiatrade.com/v1/ticker')
         .then(function(response) {
-          self.data.info = response.data.data;
+          self.data.info = response.data.ticker;
         })
         .catch(function(error) {
           console.log(error)

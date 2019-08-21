@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "name": "Crypto BRL Exchanges",
     "description": "Prices from Brazilian Crypto Exchanges",
-    "version": "1",
-    "author": "Helton Hayashi",
+    "version": "1.1",
+    "author": "Helton Hayashi, Guilherme Branco Stracini",
     "permissions": [
        "https://cdn.jsdelivr.net/npm/vue/dist/vue.js" 
     ], 
@@ -11,6 +11,5 @@
         "default_popup": "popup.html"
     },
     "chrome_url_overrides" : {
-    },
-    "js" : ["app.js"]
+    }
 }

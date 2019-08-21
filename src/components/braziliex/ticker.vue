@@ -1,14 +1,14 @@
 <template>
     <tr>
-        <td class="crypto-name">{{ this.coin }}</td>
+        <td class="crypto-name">{{ this.coin.toUpperCase() }}</td>
         <td class="lastprice">
             {{ data.info.last ? formatPrice(data.info.last) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.high) : 0 }}
+            {{ data.info.highestBid24 ? formatPrice(data.info.highestBid24) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.low) : 0 }}
+            {{ data.info.lowestAsk24 ? formatPrice(data.info.lowestAsk24) : 0 }}
         </td>
     </tr>
 </template>
@@ -40,9 +40,9 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('https://cors-anywhere.herokuapp.com/https://api.bitcointrade.com.br/v2/public/BRL'+ this.coin+'/ticker')
+      const result = axios.get('https://braziliex.com/api/v1/public/ticker/'+ this.coin+'_brl')
         .then(function(response) {
-          self.data.info = response.data.data;
+          self.data.info = response.data;
         })
         .catch(function(error) {
           console.log(error)
