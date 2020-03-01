@@ -1,5 +1,5 @@
 # crypto-brl-extension
-Cryptocurrency prices from Brazilian exchanges
+Cryptocurrency prices from Brazil's exchanges
 
 ## install
 
