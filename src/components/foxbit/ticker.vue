@@ -37,7 +37,7 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const socket = new WebSocket('wss://apifoxbitprodlb.alphapoint.com/WSGateway/');
+      const socket = new WebSocket('wss://api.foxbit.com.br/WSGateway/');
 
       const coin = {
         "OMSId": 1,
