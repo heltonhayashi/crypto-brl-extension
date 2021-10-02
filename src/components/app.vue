@@ -4,6 +4,7 @@
             <NovaDAX />
             <Mercadobitcoin />
             <Foxbit />
+            <BitPreco />
         </div>
     </div>
 </template>
@@ -12,12 +13,14 @@
 import NovaDAX from './novadax/index.vue'
 import Mercadobitcoin from './mercadobitcoin/index.vue'
 import Foxbit from './foxbit/index.vue'
+import BitPreco from './bitpreco/index.vue'
 
 export default { 
     components: {
         NovaDAX,
         Mercadobitcoin, 
         Foxbit, 
+        BitPreco,
     }
 }
 </script>
