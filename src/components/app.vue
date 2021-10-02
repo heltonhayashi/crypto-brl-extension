@@ -1,29 +1,23 @@
 <template>
     <div>
         <div id="exchanges">
-            <Bitcointrade />
+            <NovaDAX />
             <Mercadobitcoin />
             <Foxbit />
-			<Braziliex />
-            <PitaiaTrade />
         </div>
     </div>
 </template>
 <script>
 
-import Bitcointrade from './bitcointrade/index.vue'
+import NovaDAX from './novadax/index.vue'
 import Mercadobitcoin from './mercadobitcoin/index.vue'
 import Foxbit from './foxbit/index.vue'
-import Braziliex from './braziliex/index.vue'
-import PitaiaTrade from './pitaiatrade/index.vue'
 
 export default { 
     components: {
-        Bitcointrade,
+        NovaDAX,
         Mercadobitcoin, 
         Foxbit, 
-		Braziliex,
-        PitaiaTrade,
     }
 }
 </script>
