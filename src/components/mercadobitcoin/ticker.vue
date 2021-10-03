@@ -8,7 +8,7 @@
             {{ data.info.high ? formatPrice(data.info.high) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.low) : 0 }}
+            {{ data.info.low ? formatPrice(data.info.low) : 0 }}
         </td>
     </tr>
 </template>
@@ -40,7 +40,7 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('https://cors-anywhere.herokuapp.com/https://www.mercadobitcoin.net/api/'+ this.coin  +'/ticker/')
+      const result = axios.get('https://www.mercadobitcoin.net/api/'+ this.coin  +'/ticker')
         .then(function(response) {
           self.data.info = response.data.ticker;
         })
