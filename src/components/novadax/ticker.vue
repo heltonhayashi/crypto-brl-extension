@@ -2,13 +2,13 @@
     <tr>
         <td class="crypto-name">{{ this.coin }}</td>
         <td class="lastprice">
-            {{ data.info.last ? formatPrice(data.info.last) : 0 }}
+            {{ data.info.lastPrice ? formatPrice(data.info.lastPrice) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.high) : 0 }}
+            {{ data.info.high24h ? formatPrice(data.info.high24h) : 0 }}
         </td>
         <td>
-            {{ data.info.high ? formatPrice(data.info.low) : 0 }}
+            {{ data.info.low24h ? formatPrice(data.info.low24h) : 0 }}
         </td>
     </tr>
 </template>
@@ -40,7 +40,7 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('https://cors-anywhere.herokuapp.com/https://api.bitcointrade.com.br/v2/public/BRL'+ this.coin+'/ticker')
+      const result = axios.get('https://api.novadax.com/v1/market/ticker?symbol='+this.coin+'_BRL')
         .then(function(response) {
           self.data.info = response.data.data;
         })

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2>BitcoinTrade</h2>
+    <h2>NovaDAX</h2>
     <table cellspacing="10" cellpadding="10">
         <thead>
             <tr>
                 <th>Moeda</th>
                 <th>Ultimo</th>
-                <th>Maior 24h</th>
-                <th>Menor 24h</th>
+                <th>Maior</th>
+                <th>Menor</th>
             </tr>
         </thead>
         <tbody>
