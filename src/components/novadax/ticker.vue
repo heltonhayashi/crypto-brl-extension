@@ -40,7 +40,7 @@ export default {
   methods: {
     fetchData: function() {
       const self = this;
-      const result = axios.get('http://cors-anywhere.herokuapp.com/https://api.novadax.com/v1/market/ticker?symbol='+this.coin+'_BRL', {
+      const result = axios.get('https://still-headland-84996.herokuapp.com/https://api.novadax.com/v1/market/ticker?symbol='+this.coin+'_BRL', {
         headers: {
           'X-Requested-With': null,
         }})
