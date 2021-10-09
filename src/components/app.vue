@@ -6,6 +6,7 @@
             <Foxbit />
             <BitPreco />
             <CoinNext />
+            <BitcoinTrade />
         </div>
     </div>
 </template>
@@ -16,6 +17,7 @@ import Mercadobitcoin from './mercadobitcoin/index.vue'
 import Foxbit from './foxbit/index.vue'
 import BitPreco from './bitpreco/index.vue'
 import CoinNext from './nextcoin/index.vue'
+import BitcoinTrade from './bitcointrade/index.vue'
 
 export default { 
     components: {
@@ -24,6 +26,7 @@ export default {
         Foxbit, 
         BitPreco,
         CoinNext,
+        BitcoinTrade,
     }
 }
 </script>
